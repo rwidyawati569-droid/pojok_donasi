@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pojok Donasi Kampus</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="navbar">
+  <h2>Pojok Donasi</h2>
+  <nav><a href="index.html">Beranda</a><a href="donasi.html">Donasi</a><a href="daftar.html">Info</a></nav>
+</header>
+
+<section class="hero">
+  <h1>Dari Mahasiswa, Untuk Mahasiswa</h1>
+  <p>Donasikan buku & baju layak pakai. Bantu adik tingkat yang membutuhkan!</p>
+  <a href="donasi.html" class="btn">Donasi Sekarang</a>
+</section>
+
+<section class="container">
+  <h3>Stok Donasi Tersedia (TABLE)</h3>
+  <div class="filter-btn">
+    <button onclick="filterBarang('semua')">Semua</button>
+    <button onclick="filterBarang('buku')">Buku</button>
+    <button onclick="filterBarang('pakaian')">Pakaian</button>
+  </div>
+  <table id="tabelDonasi">
+    <tr><th>No</th><th>Barang</th><th>Kondisi</th><th>Donatur</th><th>Status</th></tr>
+    <tr data-kategori="buku"><td>1</td><td>Buku Basis Data</td><td>90% Layak</td><td>Ririn SIF</td><td>Tersedia</td></tr>
+    <tr data-kategori="pakaian"><td>2</td><td>Almamater M</td><td>Layak Pakai</td><td>Kak Angkatan 22</td><td>Tersedia</td></tr>
+    <tr data-kategori="buku"><td>3</td><td>Kalkulator Scientific</td><td>Baru</td><td>Hamba Allah</td><td>Tersedia</td></tr>
+    <tr data-kategori="pakaian"><td>4</td><td>Kemeja Putih</td><td>Layak</td><td>FTI</td><td>Disalurkan</td></tr>
+  </table>
+</section>
+<footer>© 2026 Pojok Donasi Kampus Makassar</footer>
+<script src="script.js"></script>
+</body>
+</html>

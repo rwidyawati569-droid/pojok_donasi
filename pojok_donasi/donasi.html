@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="id">
+<head><meta charset="UTF-8"><link rel="stylesheet" href="style.css"><title>Donasi</title></head>
+<body>
+<header class="navbar"><h2>Pojok Donasi</h2><nav><a href="index.html">Beranda</a><a href="donasi.html">Donasi</a><a href="daftar.html">Info</a></nav></header>
+<section class="container">
+<h3>Form Donasi Barang (FORM)</h3>
+<form id="formDonasi">
+  <label>Nama Lengkap</label><input type="text" required placeholder="Ririn">
+  <label>NIM / Jurusan</label><input type="text" required placeholder="SIF 25">
+  <label>Jenis Barang</label><select required><option value="">Pilih</option><option>Buku</option><option>Pakaian</option><option>Alat Tulis</option></select>
+  <label>Kondisi Barang</label><select required><option>Baru</option><option>Layak Pakai 90%</option><option>Layak Pakai 70%</option></select>
+  <label>Lokasi Pengambilan</label><input type="text" required placeholder="Gedung FIKTI / Kos Rappocini">
+  <label>Catatan</label><textarea placeholder="Bisa diambil jam berapa?"></textarea>
+  <button type="submit">Kirim Donasi</button>
+</form>
+</section>
+<script>
+document.getElementById('formDonasi').addEventListener('submit', function(e){
+  e.preventDefault(); alert('Terima kasih! Admin akan hubungi via WA untuk pickup.'); window.location.href='index.html';
+});
+</script>
+</body>
+</html>
